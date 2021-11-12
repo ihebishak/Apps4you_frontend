@@ -1,0 +1,119 @@
+<div id="contacts">
+    <div class="breadcrumbs1_wrapper">
+        <div class="container">
+            <div class="breadcrumbs1">
+                <a href="index.html">{{ "CONTACTS.1" | translate }}</a>
+                <span>/</span> {{ "CONTACTS.2" | translate }}
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container">
+            <h1>{{ "CONTACTS.3" | translate }}</h1>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="content-part">
+                        <div id="note"></div>
+                        <div id="fields">
+
+                            <form id="ajax-contact-form" class="form-horizontal" #loginform="ngForm" (ngSubmit)="submit()">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="inputName" name="name" placeholder="Full Name" [(ngModel)]="contact.fullName" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="inputEmail" name="email" placeholder="E-mail address" [(ngModel)]="contact.email" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Subject" [(ngModel)]="contact.subject" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="10" id="inputMessage" name="content" placeholder="Message" [(ngModel)]="contact.message">
+                      </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        {{"CONTACTS.9"|translate}}
+                                    </label>
+                                </div> -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- <div class="form-group capthca">
+                                            <label
+                                                for="inputCapthca"
+                                                class="sr-only"
+                                            >
+                                                Capthca
+                                            </label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="inputCapthca"
+                                                name="capthca"
+                                                value="Capthca"
+                                                onblur="if(this.value=='') this.value='Capthca'"
+                                                onfocus="if(this.value =='Capthca' ) this.value=''"
+                                            >
+                                        </div>
+                                        <div class="form-group img">
+                                            <img src="captcha/captcha.php">
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-default btn-cf-submit">
+                  {{ "CONTACTS.10" | translate }}
+                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="sidebar-part">
+                        <h5>{{ "CONTACTS.11" | translate }}</h5>
+                        <p>
+                            Germany Chemnitz
+                            <br /> Tunisie Tunis
+                        </p>
+
+                        <div class="hl2"></div>
+
+                        <h5>{{ "CONTACTS.12" | translate }}</h5>
+
+                        <p>
+                            {{ "CONTACTS.13" | translate }}
+                            <a href="#">info@apps4you.org</a>
+                            <br /> {{ "CONTACTS.14" | translate }}
+                            <a href="#">+49 178 1228351</a>
+                            <br />
+                            <a class="pp" href="#"> +216 29144518 </a>
+                        </p>
+
+                        <div class="hl2"></div>
+
+                        <h5>{{ "CONTACTS.15" | translate }}</h5>
+
+                        <p>{{ "CONTACTS.16" | translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

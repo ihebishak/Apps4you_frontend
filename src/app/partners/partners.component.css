@@ -1,0 +1,153 @@
+.site-section {
+    padding: 2.5em 0;
+}
+
+@media (min-width: 768px) {
+    .site-section {
+        padding: 5em 0;
+    }
+}
+
+.site-section.site-section-sm {
+    padding: 4em 0;
+}
+
+.site-section-heading {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .site-section-heading {
+        font-size: 3rem;
+    }
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.container {
+    min-width: 992px !important;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.col-md-7,
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+.mb-lg-0,
+.my-lg-0 {
+    margin-bottom: 0 !important;
+}
+
+.person h3 {
+    font-size: 30px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.ul-social-circle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ul-social-circle li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.ul-social-circle li:first-child {
+    margin-left: 0;
+}
+
+.ul-social-circle li span {
+    width: 30px;
+    height: 30px;
+    background: #777;
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ul-social-circle li a span {
+    color: #fff;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.ul-social-circle li a:hover span {
+    background: #2b2b2b;
+    color: #fff;
+}

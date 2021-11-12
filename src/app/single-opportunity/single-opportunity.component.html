@@ -1,0 +1,151 @@
+<div class="breadcrumbs1_wrapper">
+    <div class="container">
+        <div class="breadcrumbs1">
+            <a href="#">{{ "SINGLE_OPPORTUNITY.1" | translate }}</a>
+            <span>/</span>
+            <a routerLink="/opportunity" routerLinkActive="active">{{
+        "SINGLE_OPPORTUNITY.2" | translate
+      }}</a>
+            <span>/</span> {{ opportunity.title }}
+        </div>
+    </div>
+</div>
+
+<section class="ls s-py-50 c-gutter-60">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-lg-block divider-70"></div>
+
+            <main class="offset-lg-1 col-lg-10">
+                <article class="
+            vertical-item
+            content-padding
+            bordered
+            post
+            type-event
+            status-publish
+            format-standard
+            has-post-thumbnail
+            event-single-full
+          ">
+                    <div class="item-media post-thumbnail">
+                        <img src="assets/images1/gallery/gallery-04.jpg" alt />
+                    </div>
+
+                    <div class="item-content">
+                        <!-- .post-thumbnail -->
+                        <header class="entry-header">
+                            <h1 class="entry-title">{{ opportunity.title }}</h1>
+                            <div class="d-none d-sm-block d-md-none divider-80"></div>
+                            <div class="entry-meta item-meta color-darkgrey mb-20">
+                                <i class="fa fa-calendar color-main"></i>
+                                <span>{{ opportunity.date }}</span>
+                                <i class="fa fa-map-marker color-main"></i>
+                                <span>{{ opportunity.location }}</span>
+                            </div>
+                            <!-- .entry-meta -->
+                        </header>
+                        <!-- .entry-header -->
+
+                        <div class="entry-content return">
+                            <p class="excerpt">{{ "SINGLE_OPPORTUNITY.7" | translate }} :</p>
+
+                            <p class="content">{{ opportunity.description }}</p>
+
+                            <p class="excerpt">{{ "SINGLE_OPPORTUNITY.9" | translate }} :</p>
+
+                            <ul class="list-styled">
+                                <li>{{ opportunity.requirements }}</li>
+                            </ul>
+                            <p class="excerpt">{{ "SINGLE_OPPORTUNITY.16" | translate }} :</p>
+                            <ul class="list-styled">
+                                <li>{{ opportunity.technologies }}</li>
+                            </ul>
+                        </div>
+                        <!-- .entry-content -->
+                    </div>
+                    <!-- .item-content -->
+                </article>
+
+                <div id="comments" class="comments-area box">
+                    <!-- .comment-list -->
+                    <div id="respond" class="comment-respond">
+                        <h1>{{ "SINGLE_OPPORTUNITY.17" | translate }}</h1>
+                        <form id="ajax-contact-form" class="form-horizontal" #loginform="ngForm" (ngSubmit)="submit()">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputName" [(ngModel)]="client.fullName" name="name" placeholder="fullname" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputEmail" name="email" placeholder="E-mail address" [(ngModel)]="client.emailClient" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Subject" [(ngModel)]="client.subject" required="required" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="10" id="inputMessage" name="content" placeholder="comment" [(ngModel)]="client.comment" required="required">
+                    </textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input type="file" id="attach" class="custom-file-input button form-control" (change)="onSelectFile($event)" />
+                                    <label class="custom-file-label" for="attach">
+                    {{ "SINGLE_OPPORTUNITY.18" | translate }}
+                  </label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <!-- <div class="form-group capthca">
+                                    <label
+                                        for="inputCapthca"
+                                        class="sr-only"
+                                    >
+                                        Capthca
+                                    </label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputCapthca"
+                                        name="capthca"
+                                        value="Capthca"
+                                        onblur="if(this.value=='') this.value='Capthca'"
+                                        onfocus="if(this.value =='Capthca' ) this.value=''"
+                                    >
+                                </div>
+                                <div class="form-group img">
+                                    <img src="captcha/captcha.php">
+                                </div> -->
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-default btn-cf-submit">
+                {{ "SINGLE_OPPORTUNITY.19" | translate }}
+              </button>
+                        </form>
+                    </div>
+                    <div class="d-none d-lg-block divider-40"></div>
+                </div>
+                <!-- #respond -->
+            </main>
+
+            <div class="d-none d-lg-block divider-70"></div>
+        </div>
+    </div>
+</section>

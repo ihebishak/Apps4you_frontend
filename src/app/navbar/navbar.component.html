@@ -1,0 +1,175 @@
+<div id="home" class="onepage front" data-spy="scroll" data-target="#top" data-offset="81">
+    <div id="top">
+        <div class="top2_wrapper" id="top2">
+            <div class="container">
+                <div class="top2 clearfix">
+                    <header>
+                        <div class="logo_wrapper">
+                            <a href="#" class="logo scroll-to">
+                                <img src="assets\images\logoApps.png" alt class="img" />
+                            </a>
+                        </div>
+                    </header>
+                    <div class="navbar navbar_ navbar-default">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                        <div class="navbar-collapse navbar-collapse_ collapse">
+                            <ul class="nav navbar-nav sf-menu clearfix">
+                                <li class="sub-menu sub-menu-1 active">
+                                    <a href="#">{{ "NAV.1" | translate }}</a>
+                                </li>
+                                <li>
+                                    <a href="#services">{{ "NAV.5" | translate }}</a>
+                                </li>
+                                <li class="sub-menu sub-menu-1">
+                                    <a href="#" style="text-decoration: none">
+                    {{ "NAV.6" | translate }}
+                    <em></em>
+                  </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#realisation">{{ "NAV.7" | translate }}</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#doing">{{ "NAV.8" | translate }}</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#values">{{ "NAV.9" | translate }}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a routerLink="/opportunity" routerLinkActive="active" href="#opportunity">
+                    {{ "NAV.13" | translate }}
+                  </a>
+                                </li>
+                                <li>
+                                    <a routerLink="/contacts" routerLinkActive="active" href="#contacts ">
+                    {{ "NAV.11" | translate }}
+                  </a>
+                                </li>
+                                <li class="sub-menu sub-menu-1">
+                                    <a href="#">
+                    {{ "NAV.2" | translate }}
+                    <em></em>
+                  </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#specialties">{{ "NAV.3" | translate }}</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#partners">{{ "NAV.4" | translate }}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- <li>
+                                    <label for=" ">
+                                        <select #langselect (change)="translate.use(langselect.value) ">
+                                            <option *ngFor="let lang of translate.getLangs() " [value]="lang ">
+                                                {{lang}}</option>
+                                            
+                                        </select>
+                                    </label>
+
+                                </li> -->
+                                <li>
+                                    <!-- <div class="select ">
+                                        <select name="slct " id="slct " #langselect (change)="translate.use(langselect.value) ">
+                                        <option selected disabled>{{"NAV.12"|translate}}</option>
+                                        <option *ngFor="let lang of translate.getLangs() " [value]="lang " class="w "> {{lang}}</option>
+   
+                                         </select>
+                                    </div> -->
+                                    <div class="lang-menu">
+                                        <div class="selected-lang">{{ "NAV.12" | translate }}</div>
+                                        <ul>
+                                            <li>
+                                                <a class="de myClickableThingy" (click)="translate.use('de')">
+                          Deutsh
+                        </a>
+                                            </li>
+                                            <li>
+                                                <a (click)="translate.use('en')" class="en myClickableThingy">
+                          English
+                        </a>
+                                            </li>
+                                            <li>
+                                                <a (click)="translate.use('fr')" class="fr myClickableThingy">
+                          French
+                        </a>
+                                            </li>
+                                            <li>
+                                                <a (click)="translate.use('es')" class="es myClickableThingy">
+                          Spanish
+                        </a>
+                                            </li>
+                                            <li>
+                                                <a (click)="translate.use('pt')" class="pt myClickableThingy">
+                          Portuguese
+                        </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="front-slider">
+            <div id="mission ">
+                <div class="carousel-box">
+                    <div class="inner">
+                        <div class="carousel main">
+                            <ul>
+                                <li>
+                                    <div class="mission container">
+                                        <div class="mission_inner">
+                                            <div class="txt1">{{ "SLIDER.1" | translate }}</div>
+                                            <div class="txt2">
+                                                {{ "SLIDER.2" | translate }} , {{ "SLIDER.5" | translate }} , {{ "SLIDER.8" | translate }}
+                                            </div>
+                                            <div class="txt3">
+                                                <a href="https://vimeo.com/317571768 " class="btn-default btn0">
+                          {{ "SLIDER.3" | translate }}
+                        </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                    <div class="mission container ">
+                                        <div class="mission_inner ">
+                                            <div class="txt1 ">{{'SLIDER.4' | translate}}</div>
+                                            <div class="txt2 ">{{'SLIDER.5' | translate}}</div>
+                                            <div class="txt3 "><a href="https://vimeo.com/317571768 " class="btn-default btn0 ">{{'SLIDER.6' | translate}}</a></div>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                <!-- <li>
+                                    <div class="mission container ">
+                                        <div class="mission_inner ">
+                                            <div class="txt1 ">{{'SLIDER.7' | translate}}</div>
+                                            <div class="txt2 ">{{'SLIDER.8' | translate}}</div>
+                                            <div class="txt3 "><a href="https://vimeo.com/317571768 " class="btn-default btn0 ">{{'SLIDER.9' | translate}}</a></div>
+                                        </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

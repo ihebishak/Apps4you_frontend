@@ -1,0 +1,73 @@
+<div id="opportunity">
+    <div class="breadcrumbs1_wrapper">
+        <div class="container">
+            <div class="breadcrumbs1">
+                <a href="#">{{ "OPPORTUNITY.1" | translate }}</a>
+                <span>/</span>
+                <a>{{ "OPPORTUNITY.2" | translate }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="200">
+            {{ "OPPORTUNITY.3" | translate }}
+        </div>
+    </div>
+
+    <section class="ls s-py-50">
+        <div class="container">
+            <div class="d-none d-lg-block divider-70"></div>
+
+            <div class="row c-gutter-60">
+                <main class="offset-lg-1 col-lg-10">
+                    <div *ngFor="
+              let opp of opportunities
+                | paginate
+                  : {
+                      itemsPerPage: 6,
+                      currentPage: page,
+                      totalItems: totalLength
+                    }
+            " class="return">
+                        <article class="events post side-item content-padding bordered">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
+                                    <div class="item-media">
+                                        <img src="{{ opp.img_location }}" alt />
+                                        <div class="media-links">
+                                            <a class="abs-link" title [routerLink]="['/opportunity', opp.id]"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-8 col-lg-7 col-md-6 col-xs-12">
+                                    <div class="item-content">
+                                        <h3>
+                                            <a id="title" (click)="abc(opp.id)" [routerLink]="['/opportunity', opp.id]">{{ opp.title }}</a
+                      >
+                    </h3>
+
+                    <p class="item-meta color-darkgrey">
+                      <i class="fa fa-calendar color-main"></i>
+                      <span>{{ opp.date }}</span>
+                      <i class="fa fa-map-marker color-main"></i>
+                      <span>{{ opp.location }}</span>
+                    </p>
+                    <p>{{ opp.sh_description }}</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <pagination-controls
+            class="my-pagination text-center"
+            (pageChange)="page = $event"
+          ></pagination-controls>
+        </main>
+
+        <div class="d-none d-lg-block divider-70"></div>
+      </div>
+    </div>
+  </section>
+</div>
